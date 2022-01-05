@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+
+
+
+<div class="center">
+	
+		<h2>Personal Details</h2>
+			 <form  id="signupForm" onsubmit="formSubmitHandler(event)">
+				<div > 
+				  <label>Name: </label>
+				  <input type="text" id="name" >
+				  <div class="error"></div>
+				</div> <br>
+				
+				<div> 
+				  <label>Password: </label>
+				  <input type="password" name="Password" id="password">
+				  <div class="error"></div>
+				</div><br>
+
+				<div> 
+				  <label>Email Id: </label>
+				  <input type="email" name="email" id="email">
+				  <div class="error"></div>
+				</div><br>
+
+				<div> 
+				  <label>Gender: </label>
+				  <input type="radio" id="gender" name="gender" value="male" id="gender"><i>Male</i>
+				   <input type="radio" id="gender" name="gender" value="female" id="gender"><i>FeMale</i>
+				   <div class="error"></div>
+				</div> <br>
+
+
+				<div> 
+				  <label>Contact: </label>
+				  <input type="contact" name="contact" id="contact">
+				  <div class="error"></div>
+				</div><br>
+
+				<h2> Education Qualification</h2>
+
+				<div id="degree">
+					<label>Degree</label>
+					<select >
+					  <option >--Select group--</option>
+					  <option >BE</option>
+					  <div class="error"></div>
+					  
+					</select>
+				</div><br>
+
+				<div>
+					<label>Engineering</label>
+					<select id="engineering">
+					  <option value="">--Select group--</option>
+					  <option value="CS">CS</option>
+					  <option value="EC">EC</option> 
+					  <option value="CIVIL">CIVIL</option>
+					</select>
+					<div class="error"></div>
+				</div><br>
+
+				<div> 
+				  <label>Hobbies: </label>
+				  <input type="radio" id="hobbies" name="Hobbies" value="Playing chess" class="Hobbies"><i>Playing chess</i>
+				   <input type="radio" id="hobbies" name="Hobbies" value="Reading Book" class="Hobbies"><i>Reading Book</i><br><br>
+				   <div class="error"></div>
+				</div><br>
+
+
+				<div>
+					<label>Address</label><br>
+					<textarea cols="40" rows="5" id="address" name="Address"> </textarea><br><br>
+					<div class="error"></div>
+				</div><br>
+
+				<div >
+					<!-- <input type="submit" name=""> -->
+					<button class="button">Submit</button>
+				</div>
+
+			 </form>
+
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

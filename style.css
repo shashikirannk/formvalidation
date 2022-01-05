@@ -1,0 +1,22 @@
+body {
+	background: blue;
+}
+
+h2{
+	color: red;
+}
+
+
+.button{
+	background-color: pink;
+border-radius: 12px;
+padding: 10px;
+}
+
+.center{
+	text-align: center;
+}
+
+.error{
+	color: red;
+}
